@@ -24,15 +24,17 @@ function createBoxes(amount) {
   input.value = "";
   box.innerHTML = "";
   sizes = 30;
+  const result = [];
   for(let i = 0; i < amount; i++) {
     const myBox = document.createElement("div");
     myBox.style.width = `${sizes}px`;
     myBox.style.height = `${sizes}px`;
     myBox.style.backgroundColor = getRandomHexColor();
-    box.append(myBox);
-
+    result.push(myBox);
+    console.log(myBox);
     sizes += 10;
   }
+  box.append(...result);
 }
 
 function getRandomHexColor() {

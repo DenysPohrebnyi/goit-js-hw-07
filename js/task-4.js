@@ -11,4 +11,5 @@ function handleSubmit(event) {
         info.password = elements.password.value;
     }
     form.reset();
+    console.log(info);
 }

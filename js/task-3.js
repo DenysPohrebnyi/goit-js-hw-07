@@ -6,5 +6,6 @@ function handleInput(event) {
     const name = event.target.value.trim();
     if (name !== "") {
         title.innerHTML = name;
-    }
+    } else {title.innerHTML = "Anonymous"}
+    
 }
